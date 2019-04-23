@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic');
+
+@WhiteColor: #ffffff;
+@LightGreyColor: #E1E1E1;
+@DarkGreyColor: #484848;
+@OrangeColor: #ec6f31;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+main {
+    background: url(img/bg-student.png) no-repeat fixed;
+    background-size: cover;
+}
+header {
+    height: 10vh;
+    background: @LightGreyColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+        background: url(img/logo_0.png);
+        width: 189px;
+        height: 63px;
+    }
+    nav ul {
+        display: flex;
+        width: 50vw;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul li {
+        list-style-type: none;
+        a {
+            display: inline-block;
+                width: 231px;
+                height: 42px;
+                box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
+                border: solid 2px @OrangeColor;
+                color: @OrangeColor;
+                font-size: 25px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: center;
+        }
+    }
+}
+section.banner {
+    height: 90vh;
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.34;
+        letter-spacing: 20px;
+        text-align: left;
+        color: @OrangeColor;
+    }
+    p {
+        font-size: 40px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: @WhiteColor; 
+        width: 550px;
+    }
+}
+
+section.practice, 
+section.company-profit {
+    background: @WhiteColor;
+    height: 50vh;
+
+}
+section.student-profit, 
+section.offer {
+    background: @LightGreyColor;
+    height: 50vh;
+}
+
+section.contact-us {
+    height: 90vh;
+}
+
+section.map {
+    height: 50vh;
+}
+
+footer {
+    height: 10vh;
+    background: @DarkGreyColor;
+    display: flex;
+
+    .logo {
+        background: url(img/footer_logo.png);
+        width: 118px;
+        height: 54px;
+    }
+    p.copy-right{
+        width: 278px;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.35;
+        letter-spacing: normal;
+        text-align: center;
+        color: @LightGreyColor;
+    }
+}
+h2 {
+    color: @DarkGreyColor;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+}
+
