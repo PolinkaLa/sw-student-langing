@@ -1,0 +1,369 @@
+<body class="student-flat-page" <?php body_class(); ?>>
+<header>
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#practice">Практика</a></li>
+                <li><a href="#offer">Приемущества</a></li>
+                <li><a href="#contact-us">Оставь заявку</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="chance">
+                <div>
+                    <h1>SOFTWERKE</h1>
+                    <p>твой шанс получить опыт программирования в учебнопрактических проектах в серьезной IT компании!
+                    </p>
+                </div>
+                <div class="path">
+                    <figure>
+						<img src="/wp-content/themes/sw/images/students_img/png/chip.png" alt="">
+                    	<figcaption>Изучи этапы практики</figcaption>
+					</figure>
+                    <div class='arrow'></div>
+                    <figure>
+						<img src="/wp-content/themes/sw/images/students_img/png/competitive.png" alt="">
+                    	<figcaption>Выбери то, что подходит тебе</figcaption>
+					</figure>
+                    <div class='arrow'></div>
+                    <figure>
+						<img src="/wp-content/themes/sw/images/students_img/png/comand.png" alt="">
+                    	<figcaption>Стань частью команды</figcaption>
+					</figure>
+                </div>
+            </div>
+            <div class="have-successe"><p>УСПЕХ ЗАВИСИТ ТОЛЬКО ОТ ТЕБЯ!</p></div>
+            <div class='next'></div>
+        </section>
+        <section class="practice" id="practice">
+            <h2>Практика</h2>
+            <figure>
+				<img src="/wp-content/themes/sw/images/students_img/png/research.png" alt="">
+			</figure>
+        </section>
+        <section class="student-profit">
+            <h2>Что получаешь ты?</h2>
+            <article>
+                <figure>
+                    <img src="/wp-content/themes/sw/images/students_img/png/education.png" alt="">
+                    <figcaption>
+						<ul>
+							<li>Возможность «конвертировать» полученные в университете знания в практический опыт реальных проектов</li>
+							<li>Перспективу трудоустройства у нас и работы в профессиональном коллективе в хорошей производственной атмосфере и за достойное вознаграждение</li>
+						</ul>
+					</figcaption>
+                </figure>
+            </article>
+        </section>
+        <section class="company-profit">
+            <h2>Что получает компания?</h2>
+            <article>
+                <figure>
+                    <figcaption>
+						<ul>
+							<li>> Знакомство с молодыми разработчиками</li>
+							<li>Распространение информации о нас и узнаваемость лого Софтверке в среде будущих профессионалов</li>
+							<li>В перспективе – новых квалифицированных сотрудников</li>
+						</ul>
+					</figcaption>
+                    <img src="/wp-content/themes/sw/images/students_img/png/interview.png" alt="">
+                </figure>
+            </article>
+        </section>
+        <section class="offer" id="offer">
+            <h2>Мы предлагаем</h2>
+            <article>
+                <figure>
+                    <img src="/wp-content/themes/sw/images/students_img/png/jigsaw.png" alt="">
+                    <figcaption>Участие в интересных проектах</figcaption>
+                </figure>
+                <figure>
+                    <img src="/wp-content/themes/sw/images/students_img/png/book.png" alt="">
+                    <figcaption>Сопровождение ВКР в рамках практики</figcaption>
+                </figure>
+                <figure>
+                    <img src="/wp-content/themes/sw/images/students_img/png/group.png" alt="">
+                    <figcaption>Работу в сплоченном коллективе</figcaption>
+                </figure>
+                <figure>
+                    <img src="/wp-content/themes/sw/images/students_img/png/hourglass.png" alt="">
+                    <figcaption>Гибкий график</figcaption>
+                </figure>
+            </article>
+        </section>
+        <section class="result">
+			<figure>
+                <img src="/wp-content/themes/sw/images/students_img/png/medal.png" alt="">
+                <figcaption>Результаты</figcaption>
+            </figure>
+			<div><p>Сотрудничаем с ИТМО с 2012 года</p></div>
+			<div><p>20+</p><p>бакалаврских работ</p></div>
+			<div><p>10+</p><p>магистерских диссертаций</p></div>
+        </section>
+        <section class="contact-us" id="contact-us"></section>
+        <section class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A28561c61b2ab60c2b8f832f492bb469dd497e270e6c452cf33fa35ddce5f40f9&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+        </section>
+    </main>
+
+
+
+
+<footer class="site-footer" role="contentinfo">
+<div class="logo"></div>
+        <p class="copy-right">
+                © 2012-2018, ООО Софтверке
+                Все права зарегистрированы
+        </p>
+<!-- .site-info -->
+        <div class="footer__metrics">
+            <div class="ym-counter"><!-- YandexMetrika counter -->
+                <script type="text/javascript">
+                (function (d, w, c) {
+                    (w[c] = w[c] || []).push(function() {
+                        try {
+                            w.yaCounter<?php echo get_theme_mod('set_ymKey', 'default text'); ?> = 
+                            new Ya.Metrika({id:<?php echo get_theme_mod('set_ymKey', 'default text'); ?>,
+                                    webvisor:true,
+                                    clickmap:true,
+                                    trackLinks:true,
+                                    accurateTrackBounce:true});
+                        } catch(e) { }
+                    });
+
+                    var n = d.getElementsByTagName("script")[0],
+                        s = d.createElement("script"),
+                        f = function () { n.parentNode.insertBefore(s, n); };
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                    if (w.opera == "[object Opera]") {
+                        d.addEventListener("DOMContentLoaded", f, false);
+                    } else { f(); }
+                })(document, window, "yandex_metrika_callbacks");
+                </script>
+                <noscript>
+                    <div><img src="//mc.yandex.ru/watch/<?php echo get_theme_mod('set_gaKey', 'default text'); ?>" style="position:absolute; left:-9999px;" alt="" /></div>
+                </noscript>
+            </div><!-- .YandexMetrika counter -->
+            <!-- Google counter -->
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+              ga('create', '<?php echo get_theme_mod('set_gaKey', 'default text'); ?>', 'auto');
+              ga('send', 'pageview');
+            </script>
+            <!-- .Google counter -->
+            
+                
+        </div>
+</footer><!-- #Footer -->
+<!-- #page -->
+<img src="/wp-content/themes/sw/images/icons/up_button.png" class="back-to-top" alt="back to top"/>
+
+<?php wp_footer(); ?>
+
+</body>
+</html>
+
+
+
+
+
+
+*--------------------------------------------------------------
+# STUDENT FLAT PAGE
+--------------------------------------------------------------*/
+.student-flat-page {
+    @WhiteColor: #ffffff;
+    @LightGreyColor: #E1E1E1;
+    @DarkGreyColor: #484848;
+    @DarkGreyTextColor: #707070;
+    @OrangeColor: @colorOrange;
+    padding-top: 0;
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        background: url(images/students_img/bg-student.png) no-repeat fixed;
+        background-size: cover;
+    }
+    header {
+        height: 10vh;
+        background: @LightGreyColor;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    
+        .logo {
+            background: url(images/logo/logo_0.png) no-repeat;
+            width: 18.9rem;
+            height: 6.3rem;
+        }
+        nav ul {
+            display: flex;
+            width: 50vw;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        nav ul li {
+            list-style-type: none;
+            a {
+                display: inline-block;
+                    width: 23rem;
+                    height: 4.2rem;
+                    box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.16);
+                    border: solid 0.2rem @OrangeColor;
+                    color: @OrangeColor;
+                    font-size: 2.5rem;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.33;
+                    letter-spacing: normal;
+                    text-align: center;
+            }
+        }
+    }
+
+    h2 {
+        color: @DarkGreyColor;
+        font-size: 5rem;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: center;
+        padding-top: 2.5rem;
+    }
+    figcaption {
+        font-size: 3rem;
+    }
+
+    section.banner {
+        height: 90vh;
+        padding-left: 13rem;
+        padding-top: 12rem;
+        h1 {
+            font-size: 5rem;
+            font-weight: 700;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.34;
+            letter-spacing: 2rem;
+            text-align: left;
+            color: @OrangeColor;
+        }
+        p {
+            font-size: 4rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.33;
+            letter-spacing: normal;
+            text-align: left;
+            color: @WhiteColor; 
+            width: 55rem;
+        }
+        .chance {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .path {
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            justify-content: space-around;
+
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+            figcaption {
+                font-size: 25px;
+                color: white;
+            }
+        }
+        .have-successe p {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    
+    section.practice, 
+    section.company-profit {
+        background: @WhiteColor;
+        height: 50vh;
+    
+    }
+    section.student-profit, 
+    section.offer {
+        background: @LightGreyColor;
+        height: 50vh;
+    }
+    
+    section.contact-us {
+        height: 90vh;
+    }
+    
+    section.map {
+        height: 50vh;
+    }
+
+    section.offer {
+        article {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: 30px;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        figure {
+            text-align: center;
+
+            figcaption {
+                width: min-content;
+                margin: 0 auto;
+            }
+        }
+    }
+    
+    footer {
+        height: 10vh;
+        background: @DarkGreyColor;
+        display: flex;
+    
+        .logo {
+            background: url(images/logo/footer_logo.png) no-repeat;
+            width: 11.rem;
+            height: 5.4rem;
+        }
+        p.copy-right{
+            width: 28rem;
+            font-size: 1.5rem;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.35;
+            letter-spacing: normal;
+            text-align: center;
+            color: @DarkGreyTextColor;
+        }
+    }
+    
+}
