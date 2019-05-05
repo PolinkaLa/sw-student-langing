@@ -4,14 +4,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+html {
+  font-size: 10px;
+}
+.student-flat-page {
+  padding-top: 0;
   font-family: 'PT Sans', sans-serif;
 }
-main {
+.student-flat-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.student-flat-page main {
   background: url(img/bg-student.png) no-repeat fixed;
   background-size: cover;
 }
-header {
+.student-flat-page header {
   height: 10vh;
   background: #E1E1E1;
   display: flex;
@@ -19,103 +28,337 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-header .logo {
-  background: url(img/logo_0.png);
-  width: 189px;
-  height: 63px;
+.student-flat-page header .logo {
+  background: url(img/logo_0.png) no-repeat;
+  width: 18.9rem;
+  height: 6.3rem;
 }
-header nav ul {
+.student-flat-page header nav ul {
   display: flex;
   width: 50vw;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-header nav ul li {
+.student-flat-page header nav ul li {
   list-style-type: none;
 }
-header nav ul li a {
+.student-flat-page header nav ul li a {
   display: inline-block;
-  width: 231px;
-  height: 42px;
-  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.16);
-  border: solid 2px #ec6f31;
+  width: max-content;
+  height: auto;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.16);
+  border: solid 0.2rem #ec6f31;
   color: #ec6f31;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
 }
-section.banner {
-  height: 90vh;
+.student-flat-page header nav ul li a:hover {
+  text-decoration: underline;
 }
-section.banner h1 {
-  font-size: 50px;
-  font-weight: 700;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.34;
-  letter-spacing: 20px;
-  text-align: left;
-  color: #ec6f31;
-}
-section.banner p {
-  font-size: 40px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
-  width: 550px;
-}
-section.practice,
-section.company-profit {
-  background: #ffffff;
-  height: 50vh;
-}
-section.student-profit,
-section.offer {
-  background: #E1E1E1;
-  height: 50vh;
-}
-section.contact-us {
-  height: 90vh;
-}
-section.map {
-  height: 50vh;
-}
-footer {
-  height: 10vh;
-  background: #484848;
-  display: flex;
-}
-footer .logo {
-  background: url(img/footer_logo.png);
-  width: 118px;
-  height: 54px;
-}
-footer p.copy-right {
-  width: 278px;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.35;
-  letter-spacing: normal;
-  text-align: center;
-  color: #E1E1E1;
-}
-h2 {
+.student-flat-page h2 {
   color: #484848;
-  font-size: 50px;
+  font-size: 5rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
   text-align: center;
+  padding-top: 2.5rem;
+}
+.student-flat-page figcaption {
+  font-size: 2.5rem;
+}
+.student-flat-page section.banner {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.student-flat-page section.banner h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.34;
+  letter-spacing: 2rem;
+  text-align: left;
+  color: #ec6f31;
+}
+.student-flat-page section.banner p {
+  font-size: 3.5rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  width: 55rem;
+}
+.student-flat-page section.banner .chance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.student-flat-page section.banner .path {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+.student-flat-page section.banner .path figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+}
+.student-flat-page section.banner .path img {
+  display: block;
+}
+.student-flat-page section.banner .path figcaption {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.student-flat-page section.banner .path .arrow {
+  background: url(img/png/right-arrow_50.png);
+  width: 5rem;
+  height: 5rem;
+}
+.student-flat-page section.banner .have-successe p {
+  width: 100%;
+  text-align: center;
+}
+.student-flat-page section.banner .next {
+  height: 5rem;
+  width: 5rem;
+  background: url(img/png/navigate.png);
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.student-flat-page section.practice,
+.student-flat-page section.company-profit {
+  background: #ffffff;
+}
+.student-flat-page section.practice img,
+.student-flat-page section.company-profit img {
+  display: block;
+  height: 20rem;
+  width: 20rem;
+}
+.student-flat-page section.practice {
+  color: #484848;
+}
+.student-flat-page section.practice .tabs {
+  position: relative;
+}
+.student-flat-page section.practice .tabs > div,
+.student-flat-page section.practice .tabs > input {
+  display: none;
+  min-height: 150px;
+}
+.student-flat-page section.practice .tabs > div {
+  margin-left: 10rem;
+}
+.student-flat-page section.practice .tabs label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  background: #E1E1E1;
+  color: #484848;
+}
+.student-flat-page section.practice .tabs label:nth-of-type(2) {
+  top: 51px;
+}
+.student-flat-page section.practice .tabs label:nth-of-type(3) {
+  top: 102px;
+}
+.student-flat-page section.practice .tabs input[type="radio"]:checked + label {
+  background: #484848;
+  color: #ffffff;
+}
+.student-flat-page section.practice .tabs > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+.student-flat-page section.practice .tabs > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+.student-flat-page section.practice .tabs > input:nth-of-type(3):checked ~ div:nth-of-type(3) {
+  display: block;
+  padding: 1px 55px 1px 5px;
+}
+.student-flat-page section.practice,
+.student-flat-page section.company-profit,
+.student-flat-page section.student-profit,
+.student-flat-page section.offer {
+  height: max-content;
+}
+.student-flat-page section.practice img,
+.student-flat-page section.company-profit img,
+.student-flat-page section.student-profit img,
+.student-flat-page section.offer img {
+  display: block;
+  height: 20rem;
+  width: 20rem;
+}
+.student-flat-page section.student-profit,
+.student-flat-page section.offer {
+  background: #E1E1E1;
+}
+.student-flat-page section.practice figure,
+.student-flat-page section.student-profit figure,
+.student-flat-page section.company-profit figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.student-flat-page section.practice figure figcaption,
+.student-flat-page section.student-profit figure figcaption,
+.student-flat-page section.company-profit figure figcaption {
+  width: 60%;
+}
+.student-flat-page section.practice figure figcaption ul,
+.student-flat-page section.student-profit figure figcaption ul,
+.student-flat-page section.company-profit figure figcaption ul {
+  list-style-image: url(img/png/tick_link1.png);
+}
+.student-flat-page section.student-profit,
+.student-flat-page section.company-profit {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  color: #484848;
+}
+.student-flat-page section.result {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.student-flat-page section.result figure,
+.student-flat-page section.result div {
+  width: 50%;
+  height: 30vh;
+}
+.student-flat-page section.result figure {
+  background: #ec6f31;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.student-flat-page section.result figure img {
+  width: 18rem;
+  margin-right: 3rem;
+}
+.student-flat-page section.result figure figcaption h2 {
+  color: #ffffff;
+  margin-top: 0;
+}
+.student-flat-page section.result div {
+  background: #ffffff;
+  color: #484848;
+  font-size: 4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.student-flat-page section.result div span {
+  font-size: 6rem;
+  font-weight: bold;
+}
+.student-flat-page section.result div:nth-child(2) p {
+  width: 50%;
+  margin: 0 auto;
+}
+.student-flat-page section.result div:nth-child(4) {
+  background: #E1E1E1;
+}
+.student-flat-page section.contact-us {
+  height: 90vh;
+}
+.student-flat-page section.map {
+  height: 50vh;
+}
+.student-flat-page section.offer {
+  padding-bottom: 2.5rem;
+}
+.student-flat-page section.offer article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+.student-flat-page section.offer figure {
+  text-align: center;
+}
+.student-flat-page section.offer figure img {
+  display: block;
+  width: 15rem;
+  height: 15rem;
+}
+.student-flat-page section.offer figure figcaption {
+  width: min-content;
+  margin: 0 auto;
+  color: #484848;
+}
+.student-flat-page footer {
+  height: 10vh;
+  background: #484848;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.student-flat-page footer .logo {
+  background: url(img/footer_logo.png) no-repeat;
+  width: 11rem;
+  height: 5.4rem;
+}
+.student-flat-page footer p.copy-right {
+  width: 28rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
 }
