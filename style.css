@@ -77,6 +77,16 @@ html {
 .student-flat-page figcaption {
   font-size: 2.5rem;
 }
+.student-flat-page header,
+.student-flat-page section.banner,
+.student-flat-page section.practice,
+.student-flat-page section.company-profit,
+.student-flat-page section.student-profit,
+.student-flat-page section.offer,
+.student-flat-page section.contact-us,
+.student-flat-page footer {
+  padding: 0 10%;
+}
 .student-flat-page section.banner {
   height: 90vh;
   display: flex;
@@ -179,6 +189,10 @@ html {
 }
 .student-flat-page section.practice {
   color: #484848;
+  height: 60vh;
+}
+.student-flat-page section.practice figure {
+  margin-top: 2rem;
 }
 .student-flat-page section.practice .tabs {
   position: relative;
@@ -186,28 +200,30 @@ html {
 .student-flat-page section.practice .tabs > div,
 .student-flat-page section.practice .tabs > input {
   display: none;
-  min-height: 150px;
+  min-height: 15rem;
 }
 .student-flat-page section.practice .tabs > div {
-  margin-left: 10rem;
+  margin-left: 20rem;
+  width: 100%;
 }
 .student-flat-page section.practice .tabs label {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100px;
-  height: 50px;
-  line-height: 50px;
+  width: 15rem;
+  height: 5rem;
+  line-height: 5rem;
   text-align: center;
   cursor: pointer;
   background: #E1E1E1;
   color: #484848;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.16);
 }
 .student-flat-page section.practice .tabs label:nth-of-type(2) {
-  top: 51px;
+  top: 9rem;
 }
 .student-flat-page section.practice .tabs label:nth-of-type(3) {
-  top: 102px;
+  top: 18rem;
 }
 .student-flat-page section.practice .tabs input[type="radio"]:checked + label {
   background: #484848;
@@ -224,6 +240,13 @@ html {
 .student-flat-page section.student-profit,
 .student-flat-page section.offer {
   height: max-content;
+  padding-bottom: 2.5rem;
+}
+.student-flat-page section.practice article,
+.student-flat-page section.company-profit article,
+.student-flat-page section.student-profit article,
+.student-flat-page section.offer article {
+  width: 100%;
 }
 .student-flat-page section.practice img,
 .student-flat-page section.company-profit img,
@@ -257,7 +280,6 @@ html {
 }
 .student-flat-page section.student-profit,
 .student-flat-page section.company-profit {
-  height: 50vh;
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -311,11 +333,67 @@ html {
 .student-flat-page section.contact-us {
   height: 90vh;
 }
+.student-flat-page section.contact-us h2 {
+  color: #ffffff;
+}
+.student-flat-page section.contact-us figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.student-flat-page section.contact-us figure figcaption {
+  width: 50%;
+  height: 100%;
+}
+.student-flat-page section.contact-us figure figcaption form {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #ffffff;
+  align-items: flex-end;
+}
+.student-flat-page section.contact-us figure figcaption form input,
+.student-flat-page section.contact-us figure figcaption form label,
+.student-flat-page section.contact-us figure figcaption form textarea {
+  width: 100%;
+}
+.student-flat-page section.contact-us figure figcaption form input[type="checkbox"] {
+  width: unset;
+}
+.student-flat-page section.contact-us figure figcaption form input[type=file] {
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.student-flat-page section.contact-us figure figcaption form img {
+  height: 3rem;
+}
+.student-flat-page section.contact-us figure figcaption form input[type="text"],
+.student-flat-page section.contact-us figure figcaption form input[type="email"],
+.student-flat-page section.contact-us figure figcaption form textarea {
+  color: #484848;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.student-flat-page section.contact-us figure figcaption form input[type="submit"] {
+  background: #ec6f31;
+  color: #ffffff;
+  border: 0;
+  font-size: 2rem;
+  padding: 2rem;
+  width: 30rem;
+}
+.student-flat-page section.contact-us figure #plane {
+  transition: all 10s ease-in-out;
+}
+.student-flat-page section.contact-us figure #plane {
+  transform: translate(100px, -100px);
+}
 .student-flat-page section.map {
   height: 50vh;
-}
-.student-flat-page section.offer {
-  padding-bottom: 2.5rem;
 }
 .student-flat-page section.offer article {
   display: flex;
@@ -344,6 +422,7 @@ html {
   background: #484848;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
 }
 .student-flat-page footer .logo {
@@ -361,4 +440,18 @@ html {
   letter-spacing: normal;
   text-align: center;
   color: #707070;
+}
+.student-flat-page footer a {
+  font-size: 2.5rem;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: center;
+  color: #707070;
+  display: block;
+}
+.student-flat-page footer a:hover {
+  color: #ec6f31;
 }
