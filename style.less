@@ -101,7 +101,8 @@ html {
     section.offer,
     section.contact-us,
     footer {
-        padding: 0 10%;
+        padding-left: 10%; // **************тут меняла
+        padding-right: 10%; // **************тут меняла
     } 
     
 
@@ -214,7 +215,7 @@ html {
         .tabs > div, 
         .tabs > input {
             display: none;
-            min-height: 15rem;
+            // min-height: 15rem; // **************тут меняла
         }
         .tabs > div {
             margin-left: 20rem;
@@ -375,7 +376,12 @@ html {
                     input,
                     label,
                     textarea {
-                        width: 100%
+                        width: 100%;
+                        font-family: 'PT Sans', sans-serif;  // **************тут меняла
+                    }
+
+                    textarea {
+                        height: 30%;;  // **************тут меняла
                     }
 
                     input[type="checkbox"] {
@@ -409,10 +415,10 @@ html {
             }
 
             #plane{
-                transition: all 10s ease-in-out
+                transition: all 2s ease-in-out
             }
 
-            #plane {
+            #plane:hover {
                 // animation: fly 3s 1 linear;
                 transform: translate(100px, -100px);
             }
@@ -499,4 +505,263 @@ html {
         }
     }
     
+}
+
+// **************тут меняла
+// **************тут меняла
+// **************тут меняла
+
+@media screen and (max-width: 1700px) {
+
+    .student-flat-page{
+        section.banner .path figure {
+            width: 15rem;
+        }
+
+        section.contact-us {
+            figure {
+                figcaption {
+                    form {
+                        input[type="text"],
+                        input[type="email"],
+                        textarea {
+                            padding: 1rem;
+                            font-size: 2rem;
+                        }
+                        input[type="submit"] {
+                            font-size: 2rem;
+                            padding: 1rem;
+                            width: 20rem
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+
+    .student-flat-page{
+        header,
+        section.banner,
+        section.practice,
+        section.company-profit,
+        section.student-profit,
+        section.offer,
+        section.contact-us,
+        footer {
+            padding-left: 2%;
+            padding-right: 2%
+        } 
+
+       
+
+        section.contact-us {
+            figure {
+                figcaption {
+                    form {
+                        input,
+                        label,
+                        textarea {
+                            font-size: 2rem;
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .student-flat-page{
+        header { 
+            height: max-content;
+            nav ul li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+        }
+        
+       
+        section.banner {
+            height: max-content;
+            padding-bottom: 4rem;
+            h1 {
+                text-align: center;
+                margin-top: 2rem
+            }
+            p {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+            .path {
+                width: 100%;
+            }
+            .have-successe p {
+                margin: 3rem 0;
+            }
+        }
+
+        section.practice {
+            figure {
+                justify-content: flex-start;
+            }
+            img {
+                display: none;
+            }
+        }
+        section.result {
+            div {
+                font-size: 3rem;
+                span {
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 935px) {
+
+    .student-flat-page{
+        section.result {
+            h2 {
+                font-size: 3.5rem
+            }
+            figure img {
+                width: 13rem;
+                margin-right: 1rem;
+            }
+            figure {
+                flex-direction: column;
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .student-flat-page{
+        section.contact-us {
+            #plane {
+                display: none;
+            }
+            figure figcaption {
+                width: 80%;
+
+            }
+        }
+
+        footer {
+            flex-wrap: wrap;
+            height: max-content;
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+
+    .student-flat-page {
+        section.banner {
+            p {
+                width: unset;
+            }
+            .path {
+                flex-direction: column;
+
+                .arrow {
+                    transition: all 0.5s ease-in-out;
+                    transform: rotate(90deg);
+                    margin: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+
+    .student-flat-page {
+        section.banner {
+            h1 {
+                letter-spacing: 0.5rem;
+            }
+        }
+        section.result div {
+            font-size: 2rem;
+        }
+        section.result div:nth-child(2) p {
+            width: 100%;
+            margin: 0;
+            text-align: center;
+        }
+
+        section.student-profit figure, 
+        section.company-profit figure {
+
+            flex-direction: column;
+
+        }
+
+        section.practice {
+            figure figcaption {
+                width: 100%;
+                padding-left: 2rem;
+            }
+            .tabs { 
+                position: unset; 
+            }
+            .tabs > div, 
+            .tabs > input {
+                display: none;
+                // min-height: 15rem; // **************тут меняла
+            }
+            .tabs > div {
+                margin-left:unset;
+                width: unset;
+            }
+    
+            .tabs label {
+                position: relative; 
+                left: unset; 
+                top: unset; 
+                display: inline-block;
+            }
+            .tabs label:nth-of-type(2) {
+                top: unset;
+            }
+            .tabs label:nth-of-type(3) { 
+                top: unset;
+            }
+    
+            .tabs > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+            .tabs > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+            .tabs > input:nth-of-type(3):checked ~ div:nth-of-type(3) { 
+                display: block; 
+                padding: 1px 55px 1px 5px; 
+            }
+        }
+        section.result {
+            h2 {
+                font-size: 3rem
+            }
+            figure img {
+                width: 10rem;
+            }
+        }
+
+        section.contact-us {
+            height: 100vh;
+            h2 {
+                font-size: 3rem;
+            }
+        }
+        header {
+            flex-direction: column;
+        }
+    }
 }
